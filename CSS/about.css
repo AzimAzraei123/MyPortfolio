@@ -134,7 +134,6 @@
   }
 }
 
-/* Mobile screens */
 @media (max-width: 480px) {
   #about {
     text-align: center;
