@@ -156,12 +156,15 @@
 
   .card-container {
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
+    justify-content: center; 
+    align-items: center;
   }
 
   .flip-card {
     width: 100px;
     height: 100px;
+    margin: 10px 0;
   }
 
   .flip-card-front,
