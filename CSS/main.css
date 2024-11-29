@@ -29,7 +29,7 @@ body {
 
 
 #background-video[poster] {
-  background-image: url("fallback-image.jpg");  
+  background-image: url("img/PhoneBackground.jpg");  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
