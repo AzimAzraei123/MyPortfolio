@@ -1,0 +1,55 @@
+
+#project {
+  background-color: #070707;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#project h2 {
+  font-size: 3.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  max-width: 100%; 
+  overflow: hidden; 
+}
+
+.mySlides1,
+.mySlides2 {
+  display: none;
+}
+
+.w3-hover-text-khaki {
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  #project h2 {
+    font-size: 2.5em; 
+  }
+
+  .slideshow-container {
+    width: 90%; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  #project h2 {
+    font-size: 2em; 
+  }
+
+  .slideshow-container {
+    width: 100%; 
+  }
+}
+
+
+  
