@@ -94,7 +94,7 @@ textarea {
 @media (max-width: 480px) {
   #contact {
     padding: 15px;
-    text-align: left; 
+    text-align: center; 
   }
 
   h2 {
