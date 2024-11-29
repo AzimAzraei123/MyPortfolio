@@ -4,17 +4,16 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.main {
-  margin-left: 200px;
+
+#home {
+  position: relative;
   height: 100vh;
   overflow: hidden;
-  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
 }
+
 
 #background-video {
   position: absolute;
@@ -24,16 +23,29 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+
+  playsinline: true;
 }
 
-.headline {
+
+.content {
   position: relative;
-  font-size: 40px;
-  font-weight: bold;
+  text-align: center;
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-  text-align: center; 
+  z-index: 1;
 }
+
+.content h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.content p {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
 
 .typing-animation {
   position: relative;
@@ -44,7 +56,7 @@ body {
   font-size: 24px;
   font-weight: bold;
   margin-top: 60px;
-  text-align: center; 
+  text-align: center;
 }
 
 .cursor {
@@ -64,19 +76,22 @@ body {
 
 
 
-
 @media (max-width: 768px) {
   .main {
-    margin-left: 0; 
+    margin-left: 0;
     padding: 20px;
   }
 
-  .headline {
-    font-size: 30px; 
+  .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .content p {
+    font-size: 1.2rem;
   }
 
   .typing-animation {
-    font-size: 20px; 
+    font-size: 20px;
     margin-top: 40px;
   }
 }
@@ -87,12 +102,16 @@ body {
     padding: 15px;
   }
 
-  .headline {
-    font-size: 24px; 
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
   }
 
   .typing-animation {
-    font-size: 18px; 
+    font-size: 18px;
     margin-top: 30px;
   }
 }
